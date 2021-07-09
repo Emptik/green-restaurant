@@ -1,0 +1,23 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Vendors
+@use '../vendors/sass-mq/mq' as *;
+
+// BEM Blocks
+.l-interlocking {
+    @include mq($from: desktop) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}

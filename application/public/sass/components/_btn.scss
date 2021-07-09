@@ -1,0 +1,50 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Vendors
+@use '../vendors/sass-mq/mq' as *;
+
+// BEM Blocks
+.c-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: $color-text;
+    text-align: center;
+    background-color: $color-body;
+    border-radius: 3px;
+
+    @include mq($from: desktop) {
+        &:hover {
+            border: $border-button-hover;
+            cursor: pointer;
+
+            .c-btn__icon {
+                color: $color-icon-hover;
+            }
+        }
+    }
+}
+
+.c-btn--info {
+    font-size: $font-size-sm;
+    border: $border-button;
+}
+
+.c-btn--submit {
+    font-size: $font-size-sm;
+    border: $border-button;
+}
+
+.c-btn--fullWidth {
+    width: 100%;
+
+    @include mq($from: tablet) {
+        width: inherit;
+    }
+}
+
+// BEM Elements
+.c-btn__icon {
+    margin: 0 0 0 10px;
+    color: $color-icon;
+}

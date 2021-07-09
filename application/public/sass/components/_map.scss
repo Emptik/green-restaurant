@@ -1,0 +1,20 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Vendors
+@use '../vendors/sass-mq/mq' as *;
+
+// BEM Blocks
+.c-map {
+    width: 100%;
+    height: 250px;
+    border: $border-map;
+
+    @include mq($from: tablet) {
+        height: 350px;
+    }
+
+    @include mq($from: desktop) {
+        height: 450px;
+    }
+}

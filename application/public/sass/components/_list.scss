@@ -1,0 +1,15 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Vendors
+@use '../vendors/sass-mq/mq' as *;
+
+// BEM Blocks
+.c-list {
+    color: $color-list;
+}
+
+// BEM Elements
+.c-list__text {
+    color: $color-text;
+}

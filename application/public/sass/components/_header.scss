@@ -1,0 +1,118 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Vendors
+@use '../vendors/sass-mq/mq' as *;
+
+// Block
+.c-header {
+    background-color: $color-box;
+    border: $border-box;
+
+    &--close {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 90;
+    }
+
+    &--open {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        height: 100%;
+
+        @include mq($from: tablet) {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: inherit;
+            height: inherit;
+            overflow: inherit;
+        }
+    }
+
+    // Elements
+    &__inner {
+        padding: 40px 20px;
+
+        @include mq($from: tablet) {
+            max-width: $device-md;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        @include mq($from: desktop) {
+            max-width: $device-lg;
+        }
+
+        @include mq($from: wide) {
+            max-width: $device-xl;
+        }
+    }
+
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    &__container--row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    &__container--spaceBetween {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        @include mq($from: desktop) {
+            -webkit-box-pack: inherit;
+            -ms-flex-pack: inherit;
+            justify-content: inherit;
+        }
+    }
+
+    &__container--center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        @include mq($from: desktop) {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        width: 160px;
+        margin-left: 20px;
+
+        @include mq($from: tablet) {
+            width: inherit;
+            margin-left: 0;
+        }
+    }
+
+    &__navBar {
+        margin: 80px 0 0;
+    }
+
+    &__navbar--display {
+        @include mq($until: desktop) {
+            display: none;
+        }
+
+        @include mq($from: desktop) {
+            display: block;
+        }
+    }
+
+    &__navbar--visible {
+        display: block;
+    }
+}
