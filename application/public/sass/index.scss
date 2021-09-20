@@ -7,11 +7,6 @@
 @use 'base/normalize';
 @use 'base/base';
 
-// Layout
-@use 'layout/wrapper';
-@use 'layout/interlocking';
-@use 'layout/map' as l-map;
-
 // Components
 @use 'components/app/app';
 @use 'components/article/article';
@@ -21,11 +16,11 @@
 @use 'components/header/header';
 @use 'components/section/section';
 @use 'components/navBar/navBar';
-@use 'components/sidebar/sidebar' as c-sidebar;
+@use 'components/sidebar/sidebar';
 @use 'components/title/title';
 @use 'components/toggle/toggle';
 @use 'components/list/list';
 @use 'components/form/form';
-@use 'components/map/map' as c-map;
+@use 'components/map/map';
 @use 'components/popin/popin';
 @use 'components/partner/partner';
