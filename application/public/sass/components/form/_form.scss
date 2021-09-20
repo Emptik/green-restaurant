@@ -5,84 +5,83 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM - Blocks
-.c-form {
+.form {
     padding: 40px 0 0;
 
     @include mq($from: desktop) {
         width: 100%;
     }
-}
 
-.c-form__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-.c-form__container--row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
+        &--row {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
 
-.c-form__container--spaceBetween {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
+        &--spaceBetween {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
 
-.c-form__container--center {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.c-form__header {
-    margin-bottom: 20px;
-}
-
-// BEM - Elements
-.c-form__field {
-    display: block;
-    padding: 10px 20px;
-    color: $color-text;
-    font-size: $font-size-sm;
-    border: $border-field;
-    border-radius: 3px;
-    outline: none;
-}
-
-.c-form__field--bigger {
-    height: 90px;
-}
-
-.c-form__field--focused {
-    &:focus {
-        border: $border-field-active;
+        &--center {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
     }
-}
 
-.c-form__field--fullWidth {
-    width: 100%;
-}
+    &__header {
+        margin-bottom: 20px;
+    }
 
-.c-form__field--mediumWidth {
-    width: calc(50% - 20px);
-}
+    &__field {
+        display: block;
+        padding: 10px 20px;
+        color: $color-text;
+        font-size: $font-size-sm;
+        border: $border-field;
+        border-radius: 3px;
+        outline: none;
 
-.c-form__row {
-    position: relative;
-    margin-bottom: 20px;
-}
+        &--bigger {
+            height: 90px;
+        }
 
-.c-form__row--mediumWidth {
-    width: calc(50% - 20px);
-}
+        &--focused {
+            &:focus {
+                border: $border-field-active;
+            }
+        }
 
-.c-form__error {
-    display: block;
-    padding: 5px 0;
-    color: $color-error;
-    font-size: $font-size-sm;
+        &--fullWidth {
+            width: 100%;
+        }
+
+        &--mediumWidth {
+            width: calc(50% - 20px);
+        }
+    }
+
+    &__row {
+        position: relative;
+        margin-bottom: 20px;
+
+        &--mediumWidth {
+            width: calc(50% - 20px);
+        }
+    }
+
+    &__error {
+        display: block;
+        padding: 5px 0;
+        color: $color-error;
+        font-size: $font-size-sm;
+    }
 }

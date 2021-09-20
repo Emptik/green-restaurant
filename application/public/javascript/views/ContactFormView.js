@@ -125,14 +125,14 @@ export default class ContactForm {
         const mailField = this.form.elements.mail;
         const mailFieldValue = mailField.value;
         const messageField = this.form.elements.message;
-        const markupNameField = `<span class="c-form__error c-form__error--nameTargeted">"${nameFieldValue}" n'est pas un nom valide</span>`;
-        const markupFirstNameField = `<span class="c-form__error c-form__error--firstNameTargeted">"${firstNameFieldValue}" n'est pas un prénom valide</span>`;
-        const markupMailField = `<span class="c-form__error c-form__error--mailTargeted">"${mailFieldValue}" n'est pas une adresse mail valide</span>`;
-        const markupMessageField = '<span class="c-form__error c-form__error--messageTargeted">Votre message n\'est pas valide</span>';
-        const nameFieldError = document.querySelector('.c-form__error--nameTargeted');
-        const firstNameFieldError = document.querySelector('.c-form__error--firstNameTargeted');
-        const mailFieldError = document.querySelector('.c-form__error--mailTargeted');
-        const messageFieldError = document.querySelector('.c-form__error--messageTargeted');
+        const markupNameField = `<span class="form__error form__error--nameTargeted">"${nameFieldValue}" n'est pas un nom valide</span>`;
+        const markupFirstNameField = `<span class="form__error form__error--firstNameTargeted">"${firstNameFieldValue}" n'est pas un prénom valide</span>`;
+        const markupMailField = `<span class="form__error form__error--mailTargeted">"${mailFieldValue}" n'est pas une adresse mail valide</span>`;
+        const markupMessageField = '<span class="form__error form__error--messageTargeted">Votre message n\'est pas valide</span>';
+        const nameFieldError = document.querySelector('.form__error--nameTargeted');
+        const firstNameFieldError = document.querySelector('.form__error--firstNameTargeted');
+        const mailFieldError = document.querySelector('.form__error--mailTargeted');
+        const messageFieldError = document.querySelector('.form__error--messageTargeted');
 
         if (dataFields.type === 'focus') {
             if (dataFields.target === nameField) {
