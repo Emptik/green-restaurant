@@ -83,7 +83,6 @@ export default class ContactForm {
         const mailField = this.form.elements.mail;
         const messageField = this.form.elements.message;
         const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        // const forbiddenCharacters = ['&', '~', '#', '{', '[', '(', '|', '_', '\\', '@', ')', ']', '}', ';', '/', '§', '$', '£'];
         const dataFields = {};
 
         if (nameField.value.length < 2 || nameField.value.length > 25) {
@@ -169,7 +168,7 @@ export default class ContactForm {
     }
 
     displayPopin() {
-        const popinElement = document.querySelector('.c-popin--targeted');
-        this.popinClose = popinElement.classList.toggle('c-popin--hidden');
+        const popinElement = document.querySelector('.popin--targeted');
+        this.popinClose = popinElement.classList.toggle('popin--hidden');
     }
 }

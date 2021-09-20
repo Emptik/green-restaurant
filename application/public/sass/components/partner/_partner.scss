@@ -5,10 +5,9 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // Block
-.c-partner {
+.partner {
     padding-bottom: 60px;
 
-    // Elements
     &__header {
         margin-bottom: 20px;
     }

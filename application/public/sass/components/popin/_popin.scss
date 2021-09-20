@@ -5,7 +5,7 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM - Blocks
-.c-popin {
+.popin {
     position: fixed;
     top: 50%;
     right: 20px;
@@ -25,65 +25,64 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-}
 
-.c-popin--hidden {
-    display: none;
-}
+    &--hidden {
+        display: none;
+    }
 
-// BEM Elements
-.c-popin__text {
-    font-size: $font-size-md;
-    line-height: $line-height-medium;
-}
+    &__text {
+        font-size: $font-size-md;
+        line-height: $line-height-medium;
 
-.c-popin__text--center {
-    text-align: center;
-}
-
-.c-popin__icon {
-    font-size: $font-size-lg;
-}
-
-.c-popin__icon--hovered {
-    @include mq($from: desktop) {
-        &:hover {
-            cursor: pointer;
+        &--center {
+            text-align: center;
         }
     }
-}
 
-.c-popin__icon--cross {
-    color: $color-icon;
-}
+    &__icon {
+        font-size: $font-size-lg;
 
-.c-popin__icon--validate {
-    margin-top: 15px;
-    color: $color-validate;
-    font-size: $font-size-xl;
-}
+        &--hovered {
+            @include mq($from: desktop) {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
 
-.c-popin__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
+        &--cross {
+            color: $color-icon;
+        }
 
-.c-popin__container--row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
+        &--validate {
+            margin-top: 15px;
+            color: $color-validate;
+            font-size: $font-size-xl;
+        }
+    }
 
-.c-popin__container--right {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-.c-popin__container--center {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        &--row {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        &--right {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+
+        &--center {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
 }
