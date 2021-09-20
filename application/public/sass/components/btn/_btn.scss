@@ -1,9 +1,6 @@
 // Abstracts
 @use '../../abstracts' as *;
 
-// Vendors
-@use '../../vendors/sass-mq/mq' as *;
-
 // Borders
 $border-button: 1px solid #62959c;
 $border-button-hover: 1px solid #928d7a;

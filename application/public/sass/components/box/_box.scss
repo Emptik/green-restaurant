@@ -1,9 +1,6 @@
 // Abstracts
 @use '../../abstracts' as *;
 
-// Vendors
-@use '../../vendors/sass-mq/mq' as *;
-
 // BEM Blocks
 .box {
     padding: 0 0 40px;

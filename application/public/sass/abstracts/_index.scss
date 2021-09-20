@@ -1,1 +1,5 @@
+// Global variables
 @forward 'variables/devices';
+
+// Global Mixins
+@forward 'mixins/sass-mq/mq';
