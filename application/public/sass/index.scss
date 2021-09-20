@@ -13,6 +13,7 @@
 @use 'layout/map' as l-map;
 
 // Components
+@use 'components/app/app';
 @use 'components/article/article';
 @use 'components/blog/blog';
 @use 'components/box/box';

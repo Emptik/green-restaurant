@@ -6561,6 +6561,47 @@ textarea {
   margin: 40px 0;
 }
 
+@media (max-width: 46.24em) {
+  .app__wrapper {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 46.25em) {
+  .app__wrapper {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 61.25em) {
+  .app__wrapper {
+    max-width: 980px;
+  }
+}
+@media (min-width: 81.25em) {
+  .app__wrapper {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 61.25em) {
+  .app__interlocking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+.app__map {
+  margin: 40px 0;
+}
+
 .c-article {
   padding: 40px 0;
   border-bottom: 1px solid #928d7a;

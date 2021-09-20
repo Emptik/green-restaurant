@@ -1,0 +1,48 @@
+// Abstracts
+@use '../../abstracts' as *;
+
+// Vendors
+@use '../../vendors/sass-mq/mq' as *;
+
+// BEM Blocks
+.app {
+    &__wrapper {
+        @include mq($until: tablet) {
+            margin: 0 20px;
+        }
+
+        @include mq($from: tablet) {
+            max-width: $device-md;
+            margin: 0 auto;
+        }
+
+        @include mq($from: desktop) {
+            max-width: $device-lg;
+        }
+
+        @include mq($from: wide) {
+            max-width: $device-xl;
+        }
+    }
+
+    &__interlocking {
+        @include mq($from: desktop) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+    }
+
+    &__map {
+        margin: 40px 0;
+    }
+}
