@@ -6794,45 +6794,39 @@ textarea {
   display: block;
 }
 
-.c-section {
+.section {
   padding: 40px 0;
 }
-
 @media (min-width: 46.25em) {
-  .c-section__inner {
+  .section__inner {
     max-width: 740px;
     margin: 0 auto;
   }
 }
 @media (min-width: 61.25em) {
-  .c-section__inner {
+  .section__inner {
     max-width: 980px;
     margin: 0 auto;
   }
 }
-
-.c-section__header {
+.section__header {
   margin-bottom: 20px;
 }
-
-.c-section__row {
+.section__row {
   margin-bottom: 20px;
 }
-
-.c-section__container {
+.section__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.c-section__container--row {
+.section__container--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
-.c-section__container--center {
+.section__container--center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -6883,46 +6877,41 @@ textarea {
   }
 }
 
-.c-sidebar {
+.sidebar {
   padding: 40px 20px;
   background-color: #e0edde;
   border: 2px solid #8db596;
 }
 @media (min-width: 61.25em) {
-  .c-sidebar {
+  .sidebar {
     width: calc(35% - 40px);
   }
 }
 @media (min-width: 81.25em) {
-  .c-sidebar {
+  .sidebar {
     width: calc(30% - 40px);
   }
 }
-
-.c-sidebar__container {
+.sidebar__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.c-sidebar__container--row {
+.sidebar__container--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
-.c-sidebar__container--center {
+.sidebar__container--center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-.c-sidebar__header {
+.sidebar__header {
   margin-bottom: 40px;
 }
-
-.c-sidebar__icon {
+.sidebar__icon {
   padding: 20px;
   color: #928d7a;
   font-size: 3.5rem;
@@ -6931,77 +6920,65 @@ textarea {
   border-radius: 39px;
 }
 @media (min-width: 61.25em) {
-  .c-sidebar__icon {
+  .sidebar__icon {
     background-color: #fff;
   }
 }
 
-.c-title {
+.title {
   color: #424953;
   font-weight: normal;
   font-family: "opensans-light", sans-serif;
 }
-
-.c-title--xl {
+.title--xl {
   font-size: 3.5rem;
 }
-
-.c-title--lg {
+.title--lg {
   font-size: 2.5rem;
 }
-
-.c-title--md {
+.title--md {
   font-size: 1.9rem;
 }
-
-.c-title--center {
+.title--center {
   text-align: center;
 }
-
-.c-title__mainWord {
+.title__mainWord {
   color: #928d7a;
 }
 
-.c-toggle {
+.toggle {
   position: relative;
 }
-
 @media (min-width: 61.25em) {
-  .c-toggle--display {
+  .toggle--display {
     display: none;
   }
 }
-
-.c-toggle__container {
+.toggle__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.c-toggle__container--column {
+.toggle__container--column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
-.c-toggle__container--center {
+.toggle__container--center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-
-.c-toggle__text {
+.toggle__text {
   color: #424953;
   font-size: 1.5rem;
 }
-
-.c-toggle__icon {
+.toggle__icon {
   color: #928d7a;
   font-size: 2.5rem;
 }
-
-.c-toggle__icon--bars {
+.toggle__icon--bars {
   position: relative;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -7012,8 +6989,7 @@ textarea {
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
-
-.c-toggle__icon--cross {
+.toggle__icon--cross {
   position: absolute;
   top: 18px;
   -webkit-transform: scale(0);
@@ -7025,16 +7001,14 @@ textarea {
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
-
-.c-toggle__icon--close {
+.toggle__icon--close {
   position: relative;
   top: 0;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
-
-.c-toggle__icon--open {
+.toggle__icon--open {
   position: absolute;
   top: 17px;
   -webkit-transform: scale(0);

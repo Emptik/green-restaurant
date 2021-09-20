@@ -5,83 +5,82 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-toggle {
+.toggle {
     position: relative;
-}
 
-.c-toggle--display {
-    @include mq($from: desktop) {
-        display: none;
+    &--display {
+        @include mq($from: desktop) {
+            display: none;
+        }
     }
-}
 
-// BEM Elements
-.c-toggle__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-.c-toggle__container--column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
+        &--column {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
 
-.c-toggle__container--center {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+        &--center {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
 
-.c-toggle__text {
-    color: $color-text;
-    font-size: $font-size-sm;
-}
+    &__text {
+        color: $color-text;
+        font-size: $font-size-sm;
+    }
 
-.c-toggle__icon {
-    color: $color-icon;
-    font-size: $font-size-lg;
-}
+    &__icon {
+        color: $color-icon;
+        font-size: $font-size-lg;
 
-.c-toggle__icon--bars {
-    position: relative;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: -webkit-transform 200ms ease-in-out;
-    -o-transition: transform 200ms ease-in-out;
-    transition: -webkit-transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-}
+        &--bars {
+            position: relative;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: -webkit-transform 200ms ease-in-out;
+            -o-transition: transform 200ms ease-in-out;
+            transition: -webkit-transform 200ms ease-in-out;
+            transition: transform 200ms ease-in-out;
+            transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+        }
 
-.c-toggle__icon--cross {
-    position: absolute;
-    top: 18px;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: -webkit-transform 200ms ease-in-out;
-    -o-transition: transform 200ms ease-in-out;
-    transition: -webkit-transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-}
+        &--cross {
+            position: absolute;
+            top: 18px;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: -webkit-transform 200ms ease-in-out;
+            -o-transition: transform 200ms ease-in-out;
+            transition: -webkit-transform 200ms ease-in-out;
+            transition: transform 200ms ease-in-out;
+            transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+        }
 
-.c-toggle__icon--close {
-    position: relative;
-    top: 0;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
+        &--close {
+            position: relative;
+            top: 0;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
 
-.c-toggle__icon--open {
-    position: absolute;
-    top: 17px;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
+        &--open {
+            position: absolute;
+            top: 17px;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+    }
 }

@@ -4,30 +4,29 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
-.c-title {
+// Component
+.title {
     color: $color-title;
     font-weight: normal;
     font-family: $font-family-light, $font-family-sans-serif;
-}
 
-.c-title--xl {
-    font-size: $font-size-xl;
-}
+    &--xl {
+        font-size: $font-size-xl;
+    }
 
-.c-title--lg {
-    font-size: $font-size-lg;
-}
+    &--lg {
+        font-size: $font-size-lg;
+    }
 
-.c-title--md {
-    font-size: $font-size-md;
-}
+    &--md {
+        font-size: $font-size-md;
+    }
 
-.c-title--center {
-    text-align: center;
-}
+    &--center {
+        text-align: center;
+    }
 
-// BEM Elements
-.c-title__mainWord {
-    color: $color-subtext;
+    &__mainWord {
+        color: $color-subtext;
+    }
 }

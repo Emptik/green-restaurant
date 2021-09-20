@@ -1,7 +1,7 @@
 import Header from '../views/HeaderView.js';
 
 const headerController = () => {
-    const toggleElement = document.querySelector('.c-toggle--clicked');
+    const toggleElement = document.querySelector('.toggle--clicked');
     const headerElement = document.querySelector('.header--targeted');
     const headerNavBarElement = document.querySelector('.header__navbar--targeted');
     const headerClose = 'header--close';

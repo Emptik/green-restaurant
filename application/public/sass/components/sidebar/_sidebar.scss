@@ -5,7 +5,7 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-sidebar {
+.sidebar {
     padding: 40px 20px;
     background-color: $color-box;
     border: $border-box;
@@ -17,41 +17,40 @@
     @include mq($from: wide) {
         width: calc(30% - 40px);
     }
-}
 
-// BEM Elements
-.c-sidebar__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-.c-sidebar__container--row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
+        &--row {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
 
-.c-sidebar__container--center {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
+        &--center {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
 
-.c-sidebar__header {
-    margin-bottom: 40px;
-}
+    &__header {
+        margin-bottom: 40px;
+    }
 
-.c-sidebar__icon {
-    padding: 20px;
-    color: $color-icon;
-    font-size: $font-size-xl;
-    background-color: $color-box;
-    border: $border-icon;
-    border-radius: 39px;
+    &__icon {
+        padding: 20px;
+        color: $color-icon;
+        font-size: $font-size-xl;
+        background-color: $color-box;
+        border: $border-icon;
+        border-radius: 39px;
 
-    @include mq($from: desktop) {
-        background-color: $color-body;
+        @include mq($from: desktop) {
+            background-color: $color-body;
+        }
     }
 }

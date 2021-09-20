@@ -4,47 +4,46 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
-.c-section {
+// Component
+.section {
     padding: 40px 0;
-}
 
-.c-section__inner {
-    @include mq($from: tablet) {
-        max-width: $device-md;
-        margin: 0 auto;
+    &__inner {
+        @include mq($from: tablet) {
+            max-width: $device-md;
+            margin: 0 auto;
+        }
+
+        @include mq($from: desktop) {
+            max-width: $device-lg;
+            margin: 0 auto;
+        }
     }
 
-    @include mq($from: desktop) {
-        max-width: $device-lg;
-        margin: 0 auto;
+    &__header {
+        margin-bottom: 20px;
     }
-}
 
-// BEM Elements
-.c-section__header {
-    margin-bottom: 20px;
-}
+    &__row {
+        margin-bottom: 20px;
+    }
 
-.c-section__row {
-    margin-bottom: 20px;
-}
+    &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-.c-section__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
+        &--row {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
 
-.c-section__container--row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-.c-section__container--center {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        &--center {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
 }
