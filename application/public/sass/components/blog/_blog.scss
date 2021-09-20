@@ -5,28 +5,27 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-blog {
+.blog {
     padding-bottom: 20px;
     line-height: $line-height-base;
-}
 
-.c-blog--ended {
-    padding-bottom: 0;
-}
+    &--ended {
+        padding-bottom: 0;
+    }
 
-// BEM Elements
-.c-blog__date {
-    color: $color-date;
-    font-weight: normal;
-    font-size: $font-size-sm;
-    font-family: $font-family-light, $font-family-sans-serif;
-}
+    &__date {
+        color: $color-date;
+        font-weight: normal;
+        font-size: $font-size-sm;
+        font-family: $font-family-light, $font-family-sans-serif;
+    }
 
-.c-blog__post {
-    margin: 0;
-    color: $color-text;
-}
+    &__post {
+        margin: 0;
+        color: $color-text;
+    }
 
-.c-blog__icon {
-    margin-right: 10px;
+    &__icon {
+        margin-right: 10px;
+    }
 }

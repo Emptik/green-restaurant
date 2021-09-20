@@ -6609,28 +6609,24 @@ textarea {
   max-height: 1000px;
 }
 
-.c-blog {
+.blog {
   padding-bottom: 20px;
   line-height: 30px;
 }
-
-.c-blog--ended {
+.blog--ended {
   padding-bottom: 0;
 }
-
-.c-blog__date {
+.blog__date {
   color: #928d7a;
   font-weight: normal;
   font-size: 1.5rem;
   font-family: "opensans-light", sans-serif;
 }
-
-.c-blog__post {
+.blog__post {
   margin: 0;
   color: #424953;
 }
-
-.c-blog__icon {
+.blog__icon {
   margin-right: 10px;
 }
 
