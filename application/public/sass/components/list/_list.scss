@@ -5,11 +5,10 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-list {
+.list {
     color: $color-list;
-}
 
-// BEM Elements
-.c-list__text {
-    color: $color-text;
+    &__text {
+        color: $color-text;
+    }
 }
