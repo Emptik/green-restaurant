@@ -6559,45 +6559,45 @@ textarea {
   margin: 40px 0;
 }
 
-.c-article {
+.article {
   padding: 40px 0;
   border-bottom: 1px solid #928d7a;
 }
-.c-article--started {
+.article--started {
   padding-top: 0;
 }
-.c-article--ended {
+.article--ended {
   padding-bottom: 0;
   border-bottom: inherit;
 }
-.c-article__container {
+.article__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.c-article__container--row {
+.article__container--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
-.c-article__container--center {
+.article__container--center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
-.c-article__image {
+.article__image {
   border-radius: 60px;
 }
-.c-article__header {
+.article__header {
   margin-bottom: 20px;
 }
-.c-article__row {
+.article__row {
   margin-bottom: 20px;
 }
-.c-article__content {
+.article__content {
   max-height: 0;
   margin-bottom: 20px;
   overflow: hidden;
@@ -6605,7 +6605,7 @@ textarea {
   -o-transition: max-height 200ms ease-in-out;
   transition: max-height 200ms ease-in-out;
 }
-.c-article__content--visible {
+.article__content--visible {
   max-height: 1000px;
 }
 
