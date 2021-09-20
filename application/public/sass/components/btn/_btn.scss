@@ -5,7 +5,7 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-btn {
+.btn {
     display: inline-block;
     padding: 10px 40px;
     color: $color-text;
@@ -18,33 +18,32 @@
             border: $border-button-hover;
             cursor: pointer;
 
-            .c-btn__icon {
+            .btn__icon {
                 color: $color-icon-hover;
             }
         }
     }
-}
 
-.c-btn--info {
-    font-size: $font-size-sm;
-    border: $border-button;
-}
-
-.c-btn--submit {
-    font-size: $font-size-sm;
-    border: $border-button;
-}
-
-.c-btn--fullWidth {
-    width: 100%;
-
-    @include mq($from: tablet) {
-        width: inherit;
+    &--info {
+        font-size: $font-size-sm;
+        border: $border-button;
     }
-}
 
-// BEM Elements
-.c-btn__icon {
-    margin: 0 0 0 10px;
-    color: $color-icon;
+    &--submit {
+        font-size: $font-size-sm;
+        border: $border-button;
+    }
+
+    &--fullWidth {
+        width: 100%;
+
+        @include mq($from: tablet) {
+            width: inherit;
+        }
+    }
+
+    &__icon {
+        margin: 0 0 0 10px;
+        color: $color-icon;
+    }
 }

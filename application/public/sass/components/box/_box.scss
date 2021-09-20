@@ -5,7 +5,7 @@
 @use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
-.c-box {
+.box {
     padding: 0 0 40px;
 
     @include mq($from: desktop) {
@@ -16,9 +16,8 @@
     @include mq($from: wide) {
         width: calc(70% - 40px);
     }
-}
 
-// BEM Elements
-.c-box__header {
-    margin-bottom: 40px;
+    &__header {
+        margin-bottom: 40px;
+    }
 }

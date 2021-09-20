@@ -6630,26 +6630,25 @@ textarea {
   margin-right: 10px;
 }
 
-.c-box {
+.box {
   padding: 0 0 40px;
 }
 @media (min-width: 61.25em) {
-  .c-box {
+  .box {
     width: calc(65% - 40px);
     padding: 40px 0 0;
   }
 }
 @media (min-width: 81.25em) {
-  .c-box {
+  .box {
     width: calc(70% - 40px);
   }
 }
-
-.c-box__header {
+.box__header {
   margin-bottom: 40px;
 }
 
-.c-btn {
+.btn {
   display: inline-block;
   padding: 10px 40px;
   color: #424953;
@@ -6658,35 +6657,31 @@ textarea {
   border-radius: 3px;
 }
 @media (min-width: 61.25em) {
-  .c-btn:hover {
+  .btn:hover {
     border: 1px solid #928d7a;
     cursor: pointer;
   }
-  .c-btn:hover .c-btn__icon {
+  .btn:hover .btn__icon {
     color: #62959c;
   }
 }
-
-.c-btn--info {
+.btn--info {
   font-size: 1.5rem;
   border: 1px solid #62959c;
 }
-
-.c-btn--submit {
+.btn--submit {
   font-size: 1.5rem;
   border: 1px solid #62959c;
 }
-
-.c-btn--fullWidth {
+.btn--fullWidth {
   width: 100%;
 }
 @media (min-width: 46.25em) {
-  .c-btn--fullWidth {
+  .btn--fullWidth {
     width: inherit;
   }
 }
-
-.c-btn__icon {
+.btn__icon {
   margin: 0 0 0 10px;
   color: #928d7a;
 }
