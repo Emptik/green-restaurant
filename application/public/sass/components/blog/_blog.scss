@@ -1,8 +1,8 @@
 // Abstracts
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
 // Vendors
-@use '../vendors/sass-mq/mq' as *;
+@use '../../vendors/sass-mq/mq' as *;
 
 // BEM Blocks
 .c-blog {

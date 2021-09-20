@@ -13,18 +13,18 @@
 @use 'layout/map' as l-map;
 
 // Components
-@use 'components/article';
-@use 'components/blog';
-@use 'components/box';
-@use 'components/btn';
-@use 'components/header';
-@use 'components/section';
-@use 'components/navBar';
-@use 'components/sidebar' as c-sidebar;
-@use 'components/title';
-@use 'components/toggle';
-@use 'components/list';
-@use 'components/form';
-@use 'components/map' as c-map;
-@use 'components/popin';
-@use 'components/partner';
+@use 'components/article/article';
+@use 'components/blog/blog';
+@use 'components/box/box';
+@use 'components/btn/btn';
+@use 'components/header/header';
+@use 'components/section/section';
+@use 'components/navBar/navBar';
+@use 'components/sidebar/sidebar' as c-sidebar;
+@use 'components/title/title';
+@use 'components/toggle/toggle';
+@use 'components/list/list';
+@use 'components/form/form';
+@use 'components/map/map' as c-map;
+@use 'components/popin/popin';
+@use 'components/partner/partner';
