@@ -6686,24 +6686,24 @@ textarea {
   color: #928d7a;
 }
 
-.c-header {
+.header {
   background-color: #e0edde;
   border: 2px solid #8db596;
 }
-.c-header--close {
+.header--close {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 90;
 }
-.c-header--open {
+.header--open {
   position: fixed;
   z-index: 90;
   width: 100%;
   height: 100%;
 }
 @media (min-width: 46.25em) {
-  .c-header--open {
+  .header--open {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -6712,85 +6712,85 @@ textarea {
     overflow: inherit;
   }
 }
-.c-header__inner {
+.header__inner {
   padding: 40px 20px;
 }
 @media (min-width: 46.25em) {
-  .c-header__inner {
+  .header__inner {
     max-width: 740px;
     margin: 0 auto;
     padding: 40px 0;
   }
 }
 @media (min-width: 61.25em) {
-  .c-header__inner {
+  .header__inner {
     max-width: 980px;
   }
 }
 @media (min-width: 81.25em) {
-  .c-header__inner {
+  .header__inner {
     max-width: 1300px;
   }
 }
-.c-header__container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.c-header__container--row {
+.header__container--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
-.c-header__container--spaceBetween {
+.header__container--spaceBetween {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 @media (min-width: 61.25em) {
-  .c-header__container--spaceBetween {
+  .header__container--spaceBetween {
     -webkit-box-pack: inherit;
     -ms-flex-pack: inherit;
     justify-content: inherit;
   }
 }
-.c-header__container--center {
+.header__container--center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 @media (min-width: 61.25em) {
-  .c-header__container--center {
+  .header__container--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 }
-.c-header__logo {
+.header__logo {
   width: 160px;
   margin-left: 20px;
 }
 @media (min-width: 46.25em) {
-  .c-header__logo {
+  .header__logo {
     width: inherit;
     margin-left: 0;
   }
 }
-.c-header__navBar {
+.header__navBar {
   margin: 80px 0 0;
 }
 @media (max-width: 61.24em) {
-  .c-header__navbar--display {
+  .header__navbar--display {
     display: none;
   }
 }
 @media (min-width: 61.25em) {
-  .c-header__navbar--display {
+  .header__navbar--display {
     display: block;
   }
 }
-.c-header__navbar--visible {
+.header__navbar--visible {
   display: block;
 }
 
