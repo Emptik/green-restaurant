@@ -4,7 +4,23 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM - Blocks
+// Borders
+$border-box: 2px solid #8db596;
+
+// Colors
+$color-icon: #928d7a;
+$color-body: #fff;
+$color-validate: #8db596;
+
+// Line height
+$line-height-medium: 40px;
+
+// Font size
+$font-size-xl: 3.5rem;
+$font-size-lg: 2.5rem;
+$font-size-md: 1.9rem;
+
+// Component
 .popin {
     position: fixed;
     top: 50%;

@@ -4,7 +4,10 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Borders
+$border-map: 1px solid #928d7a;
+
+// Component
 .map {
     width: 100%;
     height: 250px;

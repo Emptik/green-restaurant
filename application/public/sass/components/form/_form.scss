@@ -4,7 +4,18 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM - Blocks
+// Borders
+$border-field-active: 1px solid #62959c;
+$border-field: 1px solid #928d7a;
+
+// Colors
+$color-text: #424953;
+$color-error: #ec5858;
+
+// Font size
+$font-size-sm: 1.5rem;
+
+// Component
 .form {
     padding: 40px 0 0;
 

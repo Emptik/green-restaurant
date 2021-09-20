@@ -4,7 +4,20 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Borders
+$border-button: 1px solid #62959c;
+$border-button-hover: 1px solid #928d7a;
+
+// Colors
+$color-text: #424953;
+$color-icon: #928d7a;
+$color-icon-hover: #62959c;
+$color-body: #fff;
+
+// Font size
+$font-size-sm: 1.5rem;
+
+// Component
 .btn {
     display: inline-block;
     padding: 10px 40px;

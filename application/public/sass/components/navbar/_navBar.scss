@@ -4,7 +4,17 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Colors
+$color-link: #928d7a;
+
+// Font-family
+$font-family-sans-serif: sans-serif;
+$font-family-light: 'opensans-light';
+
+// Font size
+$font-size-md: 1.9rem;
+
+// Component
 .navBar {
     margin: 0;
     font-size: $font-size-md;

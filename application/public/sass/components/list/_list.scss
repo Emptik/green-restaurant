@@ -4,7 +4,11 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Colors
+$color-text: #424953;
+$color-list: #928d7a;
+
+// Component
 .list {
     color: $color-list;
 

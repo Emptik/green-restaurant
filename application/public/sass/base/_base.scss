@@ -4,7 +4,24 @@
 // Vendors
 @use '../vendors/sass-mq/mq' as *;
 
-// SMACSS Base
+// Colors
+$color-text: #424953;
+$color-link: #928d7a;
+$color-link-hover: #8db596;
+$color-body: #fff;
+
+// Line height
+$line-height-base: 30px;
+
+// Font-family
+$font-family-sans-serif: sans-serif;
+$font-family-regular: 'opensans-regular';
+$font-family-light: 'opensans-light';
+
+// Font size
+$font-size-sm: 1.5rem;
+
+// Base
 @font-face {
     font-family: $font-family-regular;
     src: url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype');

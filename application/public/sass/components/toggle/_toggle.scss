@@ -4,7 +4,15 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Colors
+$color-text: #424953;
+$color-icon: #928d7a;
+
+// Font size
+$font-size-lg: 2.5rem;
+$font-size-sm: 1.5rem;
+
+// Component
 .toggle {
     position: relative;
 

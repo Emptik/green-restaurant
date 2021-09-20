@@ -4,7 +4,21 @@
 // Vendors
 @use '../../vendors/sass-mq/mq' as *;
 
-// BEM Blocks
+// Colors
+$color-text: #424953;
+$color-date: #928d7a;
+
+// Line height
+$line-height-base: 30px;
+
+// Font-family
+$font-family-sans-serif: sans-serif;
+$font-family-light: 'opensans-light';
+
+// Font size
+$font-size-sm: 1.5rem;
+
+// Component
 .blog {
     padding-bottom: 20px;
     line-height: $line-height-base;
