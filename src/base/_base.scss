@@ -3,8 +3,6 @@
 
 // Colors
 $color-text: #424953;
-$color-link: #928d7a;
-$color-link-hover: #8db596;
 $color-body: #fff;
 
 // Line height
@@ -76,16 +74,6 @@ img {
     max-width: 100%;    /* Responsive images */
     height: auto;       /* by default */
     border: 0;
-}
-
-a {
-    color: $color-link;
-    font-size: $font-size-sm;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-link-hover;
-    }
 }
 
 figure {

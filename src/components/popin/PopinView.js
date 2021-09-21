@@ -1,7 +1,7 @@
 export default class Popin {
     constructor() {
-        this.popinElement = document.querySelector('.popin--targeted');
-        this.popinCross = document.querySelector('.popin__icon--clicked');
+        this.popinElement = document.querySelector('.popin');
+        this.popinCross = document.querySelector('.popin__icon--cross');
         this.popinVisibility = 'popin--hidden';
     }
 
@@ -9,6 +9,10 @@ export default class Popin {
         this.popinCross.addEventListener('click', () => {
             this.closePopin();
         });
+    }
+
+    displayPopin() {
+        this.popinElement.classList.toggle('popin--hidden');
     }
 
     closePopin() {

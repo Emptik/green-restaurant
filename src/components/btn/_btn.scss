@@ -19,29 +19,17 @@ $font-size-sm: 1.5rem;
     display: inline-block;
     padding: 10px 40px;
     color: $color-text;
+    font-size: $font-size-sm;
     text-align: center;
+    text-decoration: none;
     background-color: $color-body;
+    border: $border-button;
     border-radius: 3px;
 
     @include mq($from: desktop) {
         &:hover {
-            border: $border-button-hover;
             cursor: pointer;
-
-            .btn__icon {
-                color: $color-icon-hover;
-            }
         }
-    }
-
-    &--info {
-        font-size: $font-size-sm;
-        border: $border-button;
-    }
-
-    &--submit {
-        font-size: $font-size-sm;
-        border: $border-button;
     }
 
     &--fullWidth {

@@ -1,17 +1,10 @@
 export default class Header {
     constructor() {
-        this.toggleElement = document.querySelector('.toggle--clicked');
-        this.headerElement = document.querySelector('.header--targeted');
-        this.headerNavBarElement = document.querySelector('.header__navbar--targeted');
+        this.headerElement = document.querySelector('.header');
+        this.headerNavBarElement = document.querySelector('.header__navbar');
         this.headerClose = 'header--close';
         this.headerOpen = 'header--open';
         this.headerNavBarVisibility = 'header__navbar--visible';
-    }
-
-    addEventHandler() {
-        this.toggleElement.addEventListener('click', () => {
-            this.displayHeader();
-        });
     }
 
     displayHeader() {

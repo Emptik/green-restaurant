@@ -1,12 +1,10 @@
 export default class ContactForm {
     constructor() {
-        this.fields = document.querySelectorAll('.form__field--targeted');
+        this.fields = document.querySelectorAll('.form__field');
         this.form = document.querySelector('.form');
     }
 
-    initialize() {
-        this.displayFieldsValue();
-
+    addEventHandler(contactFormPropagator) {
         for (let i = 0; i < this.fields.length; i += 1) {
             this.fields[i].addEventListener('focus', (event) => {
                 this.displayFieldsValue(event.target);
@@ -21,7 +19,7 @@ export default class ContactForm {
         }
 
         this.form.addEventListener('submit', (event) => {
-            this.checkFormData();
+            this.checkFormData(contactFormPropagator);
             event.preventDefault();
         });
     }
@@ -77,7 +75,7 @@ export default class ContactForm {
         }
     }
 
-    checkFormData() {
+    checkFormData(contactFormPropagator) {
         const nameField = this.form.elements.name;
         const firstNameField = this.form.elements.firstName;
         const mailField = this.form.elements.mail;
@@ -112,7 +110,7 @@ export default class ContactForm {
         if (!dataFields.name || !dataFields.firstName || !dataFields.mail || !dataFields.message) {
             this.displayFieldsError(dataFields);
         } else {
-            this.displayPopin();
+            contactFormPropagator();
         }
     }
 
@@ -165,10 +163,5 @@ export default class ContactForm {
                 messageField.insertAdjacentHTML('afterend', markupMessageField);
             }
         }
-    }
-
-    displayPopin() {
-        const popinElement = document.querySelector('.popin--targeted');
-        this.popinClose = popinElement.classList.toggle('popin--hidden');
     }
 }

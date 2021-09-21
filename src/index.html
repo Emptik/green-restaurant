@@ -12,21 +12,21 @@
     <body class="app">
 
         <!-- Header -->
-        <header class="header header--close header--targeted">
+        <header class="header header--close">
             <div class="header__inner">
                 <div class="header__container header__container--row header__container--spaceBetween header__container--center">
-                    <div class="toggle toggle--display toggle--clicked">
+                    <div class="toggle toggle--display">
                         <div class="toggle__container toggle__container--column toggle__container--center">
                             <span class="toggle__text">Menu</span>
-                            <i class="toggle__icon toggle__icon--bars toggle__icon--barsTargeted fas fa-bars"></i>
-                            <i class="toggle__icon toggle__icon--cross toggle__icon--crossTargeted fas fa-times"></i>
+                            <i class="toggle__icon toggle__icon--bars fas fa-bars"></i>
+                            <i class="toggle__icon toggle__icon--cross fas fa-times"></i>
                         </div>
                     </div>
                     <a class="header__logo" href="./index.html"><img src="components/header/images/logo.png" alt="Logo Green Restaurant"/></a>
                 </div>
 
                 <!-- Header navbar -->
-                <div class="header__navBar header__navbar--display header__navbar--targeted">
+                <div class="header__navbar header__navbar--display">
                     <nav class="navBar">
                         <ul class="navBar__container navBar__container--row navBar__container--column navBar__container--spaceEvenly">
                             <li><a class="navBar__link" href="partner.html">Nos partenaires</a></li>
@@ -51,7 +51,7 @@
                     <!-- Button Component-->
                     <div class="section__row">
                         <div class="section__container section__container--row section__container--center">
-                            <a class="btn btn--info btn--fullWidth" href="partner.html">
+                            <a class="btn btn--fullWidth" href="partner.html">
                                 Nos partenaires
                                 <i class="btn__icon fas fa-plus-circle"></i>
                             </a>
@@ -83,7 +83,7 @@
                             <p class="article__row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet quisquam nostrum autem cum, debitis iure! Eligendi cupiditate sit, modi repellat ex nesciunt dolorum. Libero tenetur eum officiis odio, sunt.</p>
 
                             <!-- Hidden article content -->
-                            <div class="article__content article__content--leftTargeted">
+                            <div class="article__content" id="article1">
                                 <div class="article__row">
                                     <div class="article__container article__container--row article__container--center">
                                         <ul class="list">
@@ -100,7 +100,7 @@
                             <div class="article__container article__container--row article__container--center">
 
                                 <!-- Button Component-->
-                                <button class="btn btn--info btn--fullWidth btn--infoLeftClicked">
+                                <button class="btn btn--article btn--fullWidth" id="btnArticle1">
                                     Lire la suite
                                     <i class="btn__icon fas fa-plus-circle"></i>
                                 </button>
@@ -120,7 +120,7 @@
                             <p class="article__row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet quisquam nostrum autem cum, debitis iure! Eligendi cupiditate sit, modi repellat ex nesciunt dolorum. Libero tenetur eum officiis odio, sunt.</p>
 
                             <!-- Hidden article content -->
-                            <div class="article__content article__content--rightTargeted">
+                            <div class="article__content" id="article2">
                                 <div class="article__row">
                                     <div class="article__container article__container--row article__container--center">
                                         <ul class="list">
@@ -137,7 +137,7 @@
                             <div class="article__container article__container--row article__container--center">
 
                                 <!-- Button component-->
-                                <button class="btn btn--info btn--fullWidth btn--infoRightClicked">
+                                <button class="btn btn--article btn--fullWidth" id="btnArticle2">
                                     Lire la suite
                                     <i class="btn__icon fas fa-plus-circle"></i>
                                 </button>
@@ -187,23 +187,23 @@
                     </header>
                     <div class="form__container form__container--row form__container--spaceBetween">
                         <div class="form__row form__row--mediumWidth">
-                            <input type="text" name="name" class="form__field form__field--fullWidth form__field--focused form__field--targeted">
+                            <input type="text" name="name" class="form__field form__field--fullWidth form__field--focused">
                         </div>
                         <div class="form__row form__row--mediumWidth">
-                            <input type="text" name="firstName" class="form__field form__field--fullWidth form__field--focused form__field--targeted">
+                            <input type="text" name="firstName" class="form__field form__field--fullWidth form__field--focused">
                         </div>
                     </div>
                     <div class="form__row">
-                        <input type="text" name="mail" class="form__field form__field--focused form__field--fullWidth form__field--targeted">
+                        <input type="text" name="mail" class="form__field form__field--focused form__field--fullWidth">
                     </div>
                     
                     <div class="form__row">
-                        <textarea name="message" class="form__field form__field--bigger form__field--focused form__field--fullWidth form__field--targeted"></textarea>
+                        <textarea name="message" class="form__field form__field--bigger form__field--focused form__field--fullWidth"></textarea>
                     </div>
                     <div class="form__container form__container--row form__container--center">      
 
                         <!-- Button component-->              
-                        <button class="btn btn--submit btn--fullWidth">
+                        <button class="btn btn--fullWidth">
                             Envoyer
                             <i class="btn__icon far fa-paper-plane"></i>
                         </button>
@@ -217,9 +217,9 @@
             </section>
         </main>
 
-        <div class="popin popin--hidden popin--targeted">
+        <div class="popin popin--hidden">
             <div class="popin__container popin__container--row popin__container--right">
-                <i class="popin__icon popin__icon--cross popin__icon--hovered popin__icon--clicked far fa-times-circle"></i>
+                <i class="popin__icon popin__icon--cross popin__icon--hovered far fa-times-circle"></i>
             </div>
             <p class="popin__text popin__text--center">Votre message a été envoyé. <br/> Vous allez recevoir un mail de confirmation.</p>
             <div class="popin__container popin__container--row popin__container--center">
