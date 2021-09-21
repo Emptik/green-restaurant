@@ -1,0 +1,100 @@
+// Abstracts
+@use '../abstracts' as *;
+
+// Colors
+$color-text: #424953;
+$color-link: #928d7a;
+$color-link-hover: #8db596;
+$color-body: #fff;
+
+// Line height
+$line-height-base: 30px;
+
+// Font-family
+$font-family-sans-serif: sans-serif;
+$font-family-regular: 'opensans-regular';
+$font-family-light: 'opensans-light';
+
+// Font size
+$font-size-sm: 1.5rem;
+
+// Base
+@font-face {
+    font-family: $font-family-regular;
+    src: url('../src/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $font-family-light;
+    src: url('../src/fonts/opensans/OpenSans-Light.ttf') format('truetype');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $color-text;
+    font-family: $font-family-regular, $font-family-sans-serif;
+    background-color: $color-body;
+}
+
+* {
+    &,
+    &::before,
+    &::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: $color-text;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+    text-align: justify;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 14px;
+    color: $color-text;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+}
+
+img {
+    display: block;
+    max-width: 100%;    /* Responsive images */
+    height: auto;       /* by default */
+    border: 0;
+}
+
+a {
+    color: $color-link;
+    font-size: $font-size-sm;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
