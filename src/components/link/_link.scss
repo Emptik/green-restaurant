@@ -1,0 +1,19 @@
+// Abstracts
+@use '../../abstracts' as *;
+
+// Colors
+$color-link: #928d7a;
+$color-link-hover: #8db596;
+
+// Font-size
+$font-size-sm: 1.5rem;
+
+.link {
+    color: $color-link;
+    font-size: $font-size-sm;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
