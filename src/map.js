@@ -1,4 +1,4 @@
-const mapController = () => {
+const initMap = () => {
     const map = new ol.Map({
         target: 'map',
         layers: [
@@ -13,4 +13,4 @@ const mapController = () => {
     });
 };
 
-mapController();
+initMap();

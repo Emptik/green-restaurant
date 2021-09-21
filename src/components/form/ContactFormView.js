@@ -1,7 +1,7 @@
 export default class ContactForm {
-    constructor(fields, form) {
-        this.fields = fields;
-        this.form = form;
+    constructor() {
+        this.fields = document.querySelectorAll('.form__field--targeted');
+        this.form = document.querySelector('.form');
     }
 
     initialize() {
