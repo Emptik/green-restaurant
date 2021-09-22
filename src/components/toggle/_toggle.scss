@@ -20,20 +20,13 @@ $font-size-sm: 1.5rem;
     }
 
     &__container {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
 
         &--column {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
             flex-direction: column;
         }
 
         &--center {
-            -webkit-box-align: center;
-            -ms-flex-align: center;
             align-items: center;
         }
     }
@@ -49,12 +42,7 @@ $font-size-sm: 1.5rem;
 
         &--bars {
             position: relative;
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
-            -webkit-transition: -webkit-transform 200ms ease-in-out;
-            -o-transition: transform 200ms ease-in-out;
-            transition: -webkit-transform 200ms ease-in-out;
             transition: transform 200ms ease-in-out;
             transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
         }
@@ -62,12 +50,7 @@ $font-size-sm: 1.5rem;
         &--cross {
             position: absolute;
             top: 18px;
-            -webkit-transform: scale(0);
-            -ms-transform: scale(0);
             transform: scale(0);
-            -webkit-transition: -webkit-transform 200ms ease-in-out;
-            -o-transition: transform 200ms ease-in-out;
-            transition: -webkit-transform 200ms ease-in-out;
             transition: transform 200ms ease-in-out;
             transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
         }
@@ -75,16 +58,12 @@ $font-size-sm: 1.5rem;
         &--close {
             position: relative;
             top: 0;
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
         }
 
         &--open {
             position: absolute;
             top: 17px;
-            -webkit-transform: scale(0);
-            -ms-transform: scale(0);
             transform: scale(0);
         }
     }

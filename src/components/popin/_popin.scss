@@ -27,15 +27,11 @@ $font-size-md: 1.9rem;
     padding: 20px;
     background-color: $color-body;
     border: $border-box;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
     @include mq($from: desktop) {
         right: inherit;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
@@ -75,26 +71,17 @@ $font-size-md: 1.9rem;
     }
 
     &__container {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
 
         &--row {
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: row;
             flex-direction: row;
         }
 
         &--right {
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
             justify-content: flex-end;
         }
 
         &--center {
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
             justify-content: center;
         }
     }
