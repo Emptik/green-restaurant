@@ -1,4 +1,6 @@
 import './index.scss';
+
+// Components
 import Toggle from './components/toggle/ToggleView.js';
 import Header from './components/header/HeaderView.js';
 import Popin from './components/popin/PopinView.js';
