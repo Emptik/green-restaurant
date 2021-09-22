@@ -6,7 +6,6 @@ module.exports = {
     entry: {
         index: './src/index.js',
         map: './src/map.js',
-        fonts: './src/fonts.js',
     },
     output: {
         filename: '[name].[contenthash].js',
