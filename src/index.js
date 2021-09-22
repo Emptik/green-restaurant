@@ -1,7 +1,24 @@
+import './index.scss';
 import Toggle from './components/toggle/ToggleView.js';
 import Header from './components/header/HeaderView.js';
 import Popin from './components/popin/PopinView.js';
 import ContactForm from './components/form/ContactFormView.js';
+import Article from './components/article/ArticleView.js';
+import Btn from './components/btn/BtnView.js';
+
+const initArticle = () => {
+    const article = new Article();
+    article.displayArticle();
+};
+
+const btnPropagator = () => {
+    initArticle();
+};
+
+const initBtn = () => {
+    const btn = new Btn();
+    btn.addEventHandler(btnPropagator);
+};
 
 const initPopin = () => {
     const popin = new Popin();
@@ -35,3 +52,4 @@ const initToggle = () => {
 
 initToggle();
 initContactForm();
+initBtn();
