@@ -6,10 +6,10 @@ $color-link: #928d7a;
 
 // Font-family
 $font-family-sans-serif: sans-serif;
-$font-family-light: 'opensans-light';
+$font-family-main: 'ephesis-regular';
 
 // Font size
-$font-size-md: 1.9rem;
+$font-size-md: 2.9rem;
 
 // Component
 .navBar {
@@ -41,7 +41,7 @@ $font-size-md: 1.9rem;
         display: block;
         color: $color-link;
         font-size: $font-size-md;
-        font-family: $font-family-light, $font-family-sans-serif;
+        font-family: $font-family-main, $font-family-sans-serif;
         text-decoration: none;
 
         @include mq($until: tablet) {

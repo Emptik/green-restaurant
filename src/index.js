@@ -1,5 +1,4 @@
 import './index.scss';
-import '@fortawesome/fontawesome-free/js/all.min.js';
 
 // Components
 import Toggle from './components/toggle/ToggleView.js';

@@ -7,18 +7,18 @@ $color-subtext: #928d7a;
 
 // Font-family
 $font-family-sans-serif: sans-serif;
-$font-family-light: 'opensans-light';
+$font-family-main: 'ephesis-regular';
 
 // Font size
-$font-size-xl: 3.5rem;
-$font-size-lg: 2.5rem;
-$font-size-md: 1.9rem;
+$font-size-xl: 4.5rem;
+$font-size-lg: 3.5rem;
+$font-size-md: 2.9rem;
 
 // Component
 .title {
     color: $color-title;
     font-weight: normal;
-    font-family: $font-family-light, $font-family-sans-serif;
+    font-family: $font-family-main, $font-family-sans-serif;
 
     &--xl {
         font-size: $font-size-xl;

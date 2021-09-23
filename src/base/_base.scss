@@ -10,21 +10,21 @@ $line-height-base: 30px;
 
 // Font-family
 $font-family-sans-serif: sans-serif;
-$font-family-regular: 'opensans-regular';
-$font-family-light: 'opensans-light';
+$font-family-main: 'ephesis-regular';
+$font-family-second: 'opensans-light';
 
 // Font size
 $font-size-sm: 1.5rem;
 
 // Base
 @font-face {
-    font-family: $font-family-regular;
-    src: url('../src/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+    font-family: $font-family-main;
+    src: url('../src/fonts/ephesis/Ephesis-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: $font-family-light;
-    src: url('../src/fonts/opensans/OpenSans-Light.ttf') format('truetype');
+    font-family: $font-family-second;
+    src: url('../src/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
 }
 
 html {
@@ -33,7 +33,7 @@ html {
 
 body {
     color: $color-text;
-    font-family: $font-family-regular, $font-family-sans-serif;
+    font-family: $font-family-second, $font-family-sans-serif;
     background-color: $color-body;
 }
 

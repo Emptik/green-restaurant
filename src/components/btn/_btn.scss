@@ -7,20 +7,22 @@ $border-button-hover: 1px solid #928d7a;
 
 // Colors
 $color-text: #424953;
-$color-icon: #928d7a;
-$color-icon-hover: #62959c;
 $color-body: #fff;
 
-// Font size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-size-sm: 2.5rem;
+$font-family-sans-serif: sans-serif;
+$font-family-main: 'ephesis-regular';
 
 // Component
 .btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 40px;
     color: $color-text;
     font-size: $font-size-sm;
-    text-align: center;
+    font-family: $font-family-main, $font-family-sans-serif;
     text-decoration: none;
     background-color: $color-body;
     border: $border-button;
@@ -41,7 +43,8 @@ $font-size-sm: 1.5rem;
     }
 
     &__icon {
+        width: 20px;
+        height: 20px;
         margin: 0 0 0 10px;
-        color: $color-icon;
     }
 }

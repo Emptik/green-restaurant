@@ -25,6 +25,8 @@ $font-size-sm: 1.5rem;
     }
 
     &__date {
+        display: flex;
+        align-items: center;
         color: $color-date;
         font-weight: normal;
         font-size: $font-size-sm;
@@ -37,6 +39,8 @@ $font-size-sm: 1.5rem;
     }
 
     &__icon {
+        width: 25px;
+        height: 25px;
         margin-right: 10px;
     }
 }

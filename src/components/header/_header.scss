@@ -13,7 +13,6 @@ $color-box: #e0edde;
     border: $border-box;
 
     &--close {
-        position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 90;
@@ -26,7 +25,6 @@ $color-box: #e0edde;
         height: 100%;
 
         @include mq($from: tablet) {
-            position: -webkit-sticky;
             position: sticky;
             top: 0;
             width: inherit;
@@ -55,47 +53,40 @@ $color-box: #e0edde;
     }
 
     &__container {
-
         display: flex;
     }
 
     &__container--row {
-
         flex-direction: row;
     }
 
     &__container--spaceBetween {
-
         justify-content: space-between;
 
         @include mq($from: desktop) {
-
             justify-content: inherit;
         }
     }
 
     &__container--center {
-
         align-items: center;
 
         @include mq($from: desktop) {
-
             justify-content: center;
         }
     }
 
     &__logo {
-        width: 160px;
+        width: 60px;
         margin-left: 20px;
 
-        @include mq($from: tablet) {
-            width: inherit;
+        @include mq($from: desktop) {
             margin-left: 0;
         }
     }
 
     &__navbar {
-        margin: 80px 0 0;
+        margin: 40px 0 0;
     }
 
     &__navbar--display {

@@ -5,17 +5,14 @@
 $border-box: 2px solid #8db596;
 
 // Colors
-$color-icon: #928d7a;
 $color-body: #fff;
-$color-validate: #8db596;
 
 // Line height
 $line-height-medium: 40px;
 
-// Font size
-$font-size-xl: 3.5rem;
-$font-size-lg: 2.5rem;
-$font-size-md: 1.9rem;
+// Fonts
+$font-size-md: 2.9rem;
+$font-family-main: 'ephesis-regular';
 
 // Component
 .popin {
@@ -41,6 +38,7 @@ $font-size-md: 1.9rem;
 
     &__text {
         font-size: $font-size-md;
+        font-family: $font-family-main;
         line-height: $line-height-medium;
 
         &--center {
@@ -49,8 +47,6 @@ $font-size-md: 1.9rem;
     }
 
     &__icon {
-        font-size: $font-size-lg;
-
         &--hovered {
             @include mq($from: desktop) {
                 &:hover {
@@ -60,13 +56,12 @@ $font-size-md: 1.9rem;
         }
 
         &--cross {
-            color: $color-icon;
+            width: 15px;
         }
 
         &--validate {
+            width: 30px;
             margin-top: 15px;
-            color: $color-validate;
-            font-size: $font-size-xl;
         }
     }
 
