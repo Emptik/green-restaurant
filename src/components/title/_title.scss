@@ -3,16 +3,14 @@
 
 // Colors
 $color-title: #424953;
-$color-subtext: #928d7a;
+$color-title-subtext: #928d7a;
 
-// Font-family
+// Fonts
 $font-family-sans-serif: sans-serif;
 $font-family-main: 'ephesis-regular';
-
-// Font size
-$font-size-xl: 4.5rem;
-$font-size-lg: 3.5rem;
-$font-size-md: 2.9rem;
+$font-size-title-xl: 4.5rem;
+$font-size-title-lg: 3.5rem;
+$font-size-title-md: 2.9rem;
 
 // Component
 .title {
@@ -21,15 +19,15 @@ $font-size-md: 2.9rem;
     font-family: $font-family-main, $font-family-sans-serif;
 
     &--xl {
-        font-size: $font-size-xl;
+        font-size: $font-size-title-xl;
     }
 
     &--lg {
-        font-size: $font-size-lg;
+        font-size: $font-size-title-lg;
     }
 
     &--md {
-        font-size: $font-size-md;
+        font-size: $font-size-title-md;
     }
 
     &--center {
@@ -37,6 +35,6 @@ $font-size-md: 2.9rem;
     }
 
     &__mainWord {
-        color: $color-subtext;
+        color: $color-title-subtext;
     }
 }

@@ -2,14 +2,14 @@
 @use '../../abstracts' as *;
 
 // Colors
-$color-text: #424953;
-$color-list: #928d7a;
+$color-list-text: #424953;
+$color-list-dot: #928d7a;
 
 // Component
 .list {
-    color: $color-list;
+    color: $color-list-dot;
 
     &__text {
-        color: $color-text;
+        color: $color-list-text;
     }
 }

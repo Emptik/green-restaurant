@@ -6,13 +6,11 @@ $border-button: 1px solid #62959c;
 $border-button-hover: 1px solid #928d7a;
 
 // Colors
-$color-text: #424953;
-$color-body: #fff;
+$color-button-text: #424953;
+$color-button-background: #fff;
 
 // Fonts
-$font-size-sm: 2.5rem;
-$font-family-sans-serif: sans-serif;
-$font-family-main: 'ephesis-regular';
+$font-size-button: 2.5rem;
 
 // Component
 .btn {
@@ -20,11 +18,10 @@ $font-family-main: 'ephesis-regular';
     align-items: center;
     justify-content: center;
     padding: 10px 40px;
-    color: $color-text;
-    font-size: $font-size-sm;
-    font-family: $font-family-main, $font-family-sans-serif;
+    color: $color-button-text;
+    font-size: $font-size-button;
     text-decoration: none;
-    background-color: $color-body;
+    background-color: $color-button-background;
     border: $border-button;
     border-radius: 3px;
 

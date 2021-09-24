@@ -2,17 +2,14 @@
 @use '../../abstracts' as *;
 
 // Borders
-$border-box: 2px solid #8db596;
+$border-popin: 2px solid #8db596;
 
 // Colors
-$color-body: #fff;
-
-// Line height
-$line-height-medium: 40px;
+$color-popin-background: #fff;
 
 // Fonts
-$font-size-md: 2.9rem;
-$font-family-main: 'ephesis-regular';
+$font-size-popin: 2.9rem;
+$font-family-popin: 'ephesis-regular', sans-serif;
 
 // Component
 .popin {
@@ -22,8 +19,8 @@ $font-family-main: 'ephesis-regular';
     left: 20px;
     z-index: 99;
     padding: 20px;
-    background-color: $color-body;
-    border: $border-box;
+    background-color: $color-popin-background;
+    border: $border-popin;
     transform: translateY(-50%);
 
     @include mq($from: desktop) {
@@ -37,9 +34,9 @@ $font-family-main: 'ephesis-regular';
     }
 
     &__text {
-        font-size: $font-size-md;
-        font-family: $font-family-main;
-        line-height: $line-height-medium;
+        font-size: $font-size-popin;
+        font-family: $font-family-popin;
+        line-height: 40px;
 
         &--center {
             text-align: center;

@@ -2,39 +2,26 @@
 @use '../abstracts' as *;
 
 // Colors
-$color-text: #424953;
-$color-body: #fff;
+$color-base-text: #424953;
 
-// Line height
-$line-height-base: 30px;
-
-// Font-family
-$font-family-sans-serif: sans-serif;
-$font-family-main: 'ephesis-regular';
-$font-family-second: 'opensans-light';
-
-// Font size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-family-base-main: 'ephesis-regular';
+$font-family-base-second: 'opensans-regular';
+$font-family-base-text: 1.5rem;
 
 // Base
 @font-face {
-    font-family: $font-family-main;
+    font-family: $font-family-base-main;
     src: url('../src/fonts/ephesis/Ephesis-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: $font-family-second;
+    font-family: $font-family-base-second;
     src: url('../src/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    color: $color-text;
-    font-family: $font-family-second, $font-family-sans-serif;
-    background-color: $color-body;
 }
 
 * {
@@ -53,9 +40,9 @@ h3 {
 
 p {
     margin: 0;
-    color: $color-text;
-    font-size: $font-size-sm;
-    line-height: $line-height-base;
+    color: $color-base-text;
+    font-size: $font-family-base-text;
+    line-height: 30px;
     text-align: justify;
 }
 
@@ -63,9 +50,9 @@ ul,
 ol {
     margin: 0;
     padding-left: 14px;
-    color: $color-text;
-    font-size: $font-size-sm;
-    line-height: $line-height-base;
+    color: $color-base-text;
+    font-size: $font-family-base-text;
+    line-height: 30px;
 }
 
 img {

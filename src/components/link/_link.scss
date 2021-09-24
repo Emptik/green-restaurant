@@ -5,12 +5,13 @@
 $color-link: #928d7a;
 $color-link-hover: #8db596;
 
-// Font-size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-size-link: 1.5rem;
 
+// Component
 .link {
     color: $color-link;
-    font-size: $font-size-sm;
+    font-size: $font-size-link;
     text-decoration: none;
 
     &:hover {

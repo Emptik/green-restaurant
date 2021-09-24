@@ -2,19 +2,16 @@
 @use '../../abstracts' as *;
 
 // Colors
-$color-link: #928d7a;
+$color-navbar-link: #928d7a;
 
-// Font-family
-$font-family-sans-serif: sans-serif;
-$font-family-main: 'ephesis-regular';
-
-// Font size
-$font-size-md: 2.9rem;
+// Fonts
+$font-family-navbar: 'ephesis-regular', sans-serif;
+$font-size-navbar: 2.9rem;
 
 // Component
 .navBar {
     margin: 0;
-    font-size: $font-size-md;
+    font-size: $font-size-navbar;
 
     &__container {
         display: flex;
@@ -39,9 +36,9 @@ $font-size-md: 2.9rem;
 
     &__link {
         display: block;
-        color: $color-link;
-        font-size: $font-size-md;
-        font-family: $font-family-main, $font-family-sans-serif;
+        color: $color-navbar-link;
+        font-size: $font-size-navbar;
+        font-family: $font-family-navbar;
         text-decoration: none;
 
         @include mq($until: tablet) {

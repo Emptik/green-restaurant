@@ -2,10 +2,10 @@
 @use '../../abstracts' as *;
 
 // Colors
-$color-text: #424953;
+$color-toggle-text: #424953;
 
-// Font size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-size-toggle: 1.5rem;
 
 // Component
 .toggle {
@@ -30,8 +30,8 @@ $font-size-sm: 1.5rem;
     }
 
     &__text {
-        color: $color-text;
-        font-size: $font-size-sm;
+        color: $color-toggle-text;
+        font-size: $font-size-toggle;
     }
 
     &__icon {

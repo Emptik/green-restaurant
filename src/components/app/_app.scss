@@ -1,8 +1,16 @@
 // Abstracts
 @use '../../abstracts' as *;
 
-// BEM Blocks
+$color-app-background: #fff;
+$color-app-text: #424953;
+$font-family-app-text: 'opensans-regular', sans-serif;
+
+// Component
 .app {
+    color: $color-app-text;
+    font-family: $font-family-app-text;
+    background-color: $color-app-background;
+
     &__wrapper {
         @include mq($until: tablet) {
             margin: 0 20px;

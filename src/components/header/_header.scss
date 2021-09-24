@@ -2,15 +2,15 @@
 @use '../../abstracts' as *;
 
 // Borders
-$border-box: 2px solid #8db596;
+$border-header: 2px solid #8db596;
 
 // Colors
-$color-box: #e0edde;
+$color-header: #e0edde;
 
-// Block
+// Component
 .header {
-    background-color: $color-box;
-    border: $border-box;
+    background-color: $color-header;
+    border: $border-header;
 
     &--close {
         position: sticky;

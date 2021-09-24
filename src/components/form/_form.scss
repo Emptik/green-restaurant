@@ -2,15 +2,15 @@
 @use '../../abstracts' as *;
 
 // Borders
-$border-field-active: 1px solid #62959c;
-$border-field: 1px solid #928d7a;
+$border-form-field-active: 1px solid #62959c;
+$border-form-field: 1px solid #928d7a;
 
 // Colors
-$color-text: #424953;
-$color-error: #ec5858;
+$color-form-text: #424953;
+$color-form-error: #ec5858;
 
-// Font size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-size-form: 1.5rem;
 
 // Component
 .form {
@@ -43,9 +43,9 @@ $font-size-sm: 1.5rem;
     &__field {
         display: block;
         padding: 10px 20px;
-        color: $color-text;
-        font-size: $font-size-sm;
-        border: $border-field;
+        color: $color-form-text;
+        font-size: $font-size-form;
+        border: $border-form-field;
         border-radius: 3px;
         outline: none;
 
@@ -55,7 +55,7 @@ $font-size-sm: 1.5rem;
 
         &--focused {
             &:focus {
-                border: $border-field-active;
+                border: $border-form-field-active;
             }
         }
 
@@ -80,7 +80,7 @@ $font-size-sm: 1.5rem;
     &__error {
         display: block;
         padding: 5px 0;
-        color: $color-error;
-        font-size: $font-size-sm;
+        color: $color-form-error;
+        font-size: $font-size-form;
     }
 }

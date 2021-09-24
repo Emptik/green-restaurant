@@ -2,22 +2,18 @@
 @use '../../abstracts' as *;
 
 // Borders
-$border-box: 2px solid #8db596;
-$border-icon: 1px solid #8db596;
+$border-sidebar: 2px solid #8db596;
+$border-sidebar-icon: 1px solid #8db596;
 
 // Colors
-$color-icon: #928d7a;
-$color-box: #e0edde;
-$color-body: #fff;
-
-// Font size
-$font-size-xl: 3.5rem;
+$color-sidebar-icon: #928d7a;
+$color-sidebar-background: #e0edde;
 
 // Component
 .sidebar {
     padding: 40px 20px;
-    background-color: $color-box;
-    border: $border-box;
+    background-color: $color-sidebar-background;
+    border: $border-sidebar;
 
     @include mq($from: desktop) {
         width: calc(35% - 40px);
@@ -41,18 +37,5 @@ $font-size-xl: 3.5rem;
 
     &__header {
         margin-bottom: 40px;
-    }
-
-    &__icon {
-        padding: 20px;
-        color: $color-icon;
-        font-size: $font-size-xl;
-        background-color: $color-box;
-        border: $border-icon;
-        border-radius: 39px;
-
-        @include mq($from: desktop) {
-            background-color: $color-body;
-        }
     }
 }

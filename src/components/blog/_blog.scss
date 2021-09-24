@@ -2,23 +2,17 @@
 @use '../../abstracts' as *;
 
 // Colors
-$color-text: #424953;
-$color-date: #928d7a;
+$color-blog-text: #424953;
+$color-blog-date: #928d7a;
 
-// Line height
-$line-height-base: 30px;
-
-// Font-family
-$font-family-sans-serif: sans-serif;
-$font-family-light: 'opensans-light';
-
-// Font size
-$font-size-sm: 1.5rem;
+// Fonts
+$font-family-blog: 'opensans-regular', sans-serif;
+$font-size-blog: 1.5rem;
 
 // Component
 .blog {
     padding-bottom: 20px;
-    line-height: $line-height-base;
+    line-height: 30px;
 
     &--ended {
         padding-bottom: 0;
@@ -27,15 +21,15 @@ $font-size-sm: 1.5rem;
     &__date {
         display: flex;
         align-items: center;
-        color: $color-date;
+        color: $color-blog-date;
         font-weight: normal;
-        font-size: $font-size-sm;
-        font-family: $font-family-light, $font-family-sans-serif;
+        font-size: $font-size-blog;
+        font-family: $font-family-blog;
     }
 
     &__post {
         margin: 0;
-        color: $color-text;
+        color: $color-blog-text;
     }
 
     &__icon {
