@@ -1,6 +1,6 @@
 # Green Restaurant
 *Green Restaurant is a fictional website project and is visible at this adress*:
-- [Green Restaurant](https://green-music-restaurant.herokuapp.com/)
+- [Green Restaurant](https://my-green-restaurant.netlify.app/)
 
 ## Table of Contents
 - [Project setup](#setup)
